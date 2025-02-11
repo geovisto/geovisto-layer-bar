@@ -39,16 +39,16 @@ map.draw(Geovisto.getMapConfigManagerFactory().default({
       "layerName": "Bar layer",
       // mapping of data domains to data dimensions
       "data": {
-			  "locationName": "district",
-			  "latitude": "latitude", // latitude in degrees
-			  "longitude": "longitude", // longitude in degrees
-			  "primaryCategory": "data.country", // primary category dimension
-			  "secondaryCategory": "data.subdata.ageRange", // secondary category dimension
-			  "value": "data.subdata.count", // value dimension
-			  "aggregation": "sum", // [sum, count]
-			  "chartColor": "#4682B4", // color of bars
-			  "chartSize": 0 // size of the chart
-			}
+        "locationName": "district",
+        "latitude": "latitude", // latitude in degrees
+        "longitude": "longitude", // longitude in degrees
+        "primaryCategory": "data.country", // primary category dimension
+        "secondaryCategory": "data.subdata.ageRange", // secondary category dimension
+        "value": "data.subdata.count", // value dimension
+        "aggregation": "sum", // [sum, count]
+        "chartColor": "#4682B4", // color of bars
+        "chartSize": 0 // size of the chart
+      }
     },
     // ...
   ]
