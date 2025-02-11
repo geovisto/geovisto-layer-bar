@@ -1,0 +1,92 @@
+{
+    "name": "geovisto-layer-bar",
+    "version": "0.9.1",
+    "description": "Geovisto tool which provides the bar layer",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "style": "dist/index.css",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "rollup -c",
+        "build:watch": "rollup -c -w"
+    },
+    "keywords": [
+        "gis",
+        "map",
+        "geovisto",
+        "leaflet",
+        "spatial-data",
+        "visualization",
+        "barmap"
+    ],
+    "author": {
+        "name": "Petr Kaspar",
+        "url": "https://github.com/xkaspa40"
+    },
+    "contributors": [
+        {
+            "name": "Petr Cermak",
+            "url": "https://github.com/483005"
+        },
+        {
+            "name": "Vladimir Korencik",
+            "url": "https://github.com/froztt"
+        },
+        {
+            "name": "Jiri Hynek",
+            "url": "https://github.com/jirka"
+        }
+    ],
+    "license": "MIT",
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "devDependencies": {
+        "@babel/core": "^7.20.7",
+        "@babel/plugin-transform-runtime": "^7.19.6",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/runtime": "^7.20.7",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-commonjs": "^24.0.0",
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@types/d3": "^6.2.0",
+        "@types/leaflet": "^1.7.4",
+        "@types/leaflet.markercluster": "^1.5.1",
+        "@types/node": "^16.18.11",
+        "@types/tinycolor2": "^1.4.6",
+        "@typescript-eslint/eslint-plugin": "^5.47.1",
+        "@typescript-eslint/parser": "^5.47.1",
+        "autoprefixer": "^10.4.13",
+        "eslint": "^8.30.0",
+        "geovisto": "^2.1.0",
+        "geovisto-selection": "^2.0.0",
+        "husky": "^8.0.2",
+        "postcss-copy": "^7.1.0",
+        "prettier": "^2.8.1",
+        "pretty-quick": "^3.1.3",
+        "rimraf": "^3.0.2",
+        "rollup": "^3.9.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.2",
+        "rollup-plugin-typescript2": "^0.34.1",
+        "sass": "^1.57.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "d3": "^6.2.0",
+        "leaflet.markercluster": "^1.5.3",
+        "tinycolor2": "^1.6.0"
+    },
+    "peerDependencies": {
+        "geovisto": "^2.1.0",
+        "leaflet": "^1.7.1"
+    }
+}

@@ -1,0 +1,85 @@
+:root {
+    --leaflet-marker-donut1: undefined;
+    --leaflet-marker-donut2: undefined;
+    --leaflet-marker-donut3: undefined;
+}
+
+.leaflet-marker-icon circle {
+    fill: #cccccc;
+    fill-opacity: 0.9;
+    stroke-width: 0;
+}
+
+.leaflet-marker-icon text {
+    fill: white;
+}
+
+.leaflet-marker-group circle {
+    stroke-width: 2;
+    stroke: black;
+}
+
+.leaflet-marker-level0 circle {
+    fill: #cccccc;
+}
+
+.leaflet-marker-level1 circle {
+    fill: #cccccc;
+}
+
+.leaflet-marker-level2 circle {
+    fill: #aaaaaa;
+}
+
+.leaflet-marker-level3 circle {
+    fill: #555555;
+}
+
+.leaflet-marker-level4 circle {
+    fill: #222222;
+}
+
+.leaflet-marker-level5 circle {
+    fill: #111111;
+}
+
+.leaflet-marker-icon path {
+    stroke-width: 0;
+    opacity: 0.6;
+}
+
+.leaflet-marker-donut1 {
+    fill: var(--leaflet-marker-donut1);
+}
+
+.leaflet-marker-donut2 {
+    fill: var(--leaflet-marker-donut2);
+}
+
+.leaflet-marker-donut3 {
+    fill: var(--leaflet-marker-donut3);
+}
+
+.leaflet-popup table {
+	border-collapse: collapse;
+	border: 2px solid rgb(140 140 140);
+	font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+.leaflet-popup caption {
+	padding: 0.5rem;
+	font-weight: bold;
+    white-space: initial;
+}
+
+.leaflet-popup th,
+.leaflet-popup td {
+	border: 1px solid rgb(140 140 140);
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.leaflet-popup-content {
+    width: fit-content !important;
+}
