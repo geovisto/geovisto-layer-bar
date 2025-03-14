@@ -53,7 +53,7 @@ export default {
         }),
         json({ compact: true }),
     ],
-    external: id => id.includes('@babel/runtime'),
+    external: id => ['@babel/runtime', 'leaflet.markercluster'].includes(id),
     onwarn: function (warning, warn) {
         if(warning.code === 'CIRCULAR_DEPENDENCY') {
             if(warning.message?.includes("node_modules/d3-transition")) return;
